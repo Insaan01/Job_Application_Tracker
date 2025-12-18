@@ -7,6 +7,7 @@ The system is designed to preserve every state change instead of overwriting
 data, enabling accurate tracking, auditing, and insights.
 
 ---
+
 ## What is an API?
 
 An API (Application Programming Interface) is a contract that allows different
@@ -18,7 +19,9 @@ and data in a controlled way.
 In this project, the API exposes endpoints over HTTP that allow authenticated
 users to create, update, and query job application data without direct access
 to the database.
+
 ---
+
 ## What This Project Does
 
 This project provides a RESTful API for tracking job applications over time.
