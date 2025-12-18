@@ -7,6 +7,36 @@ The system is designed to preserve every state change instead of overwriting
 data, enabling accurate tracking, auditing, and insights.
 
 ---
+## What is an API?
+
+An API (Application Programming Interface) is a contract that allows different
+software systems to communicate with each other. It defines a set of endpoints
+that accept requests and return structured responses, enabling clients
+(frontend apps, mobile apps, or other services) to interact with backend logic
+and data in a controlled way.
+
+In this project, the API exposes endpoints over HTTP that allow authenticated
+users to create, update, and query job application data without direct access
+to the database.
+---
+## What This Project Does
+
+This project provides a RESTful API for tracking job applications over time.
+Instead of overwriting application status, it records every status change as a
+historical event. This makes it possible to accurately reconstruct past states,
+derive the current status, and run time-based analytics.
+
+The API allows users to:
+- Register and authenticate securely using JWT
+- Create and manage job applications
+- Record application status changes without data loss
+- Retrieve current and historical application states
+- Identify applications that have been inactive for a period of time
+
+The system is designed as a backend service and can be consumed by any frontend
+or client capable of making HTTP requests.
+
+---
 
 ## Core Features
 
